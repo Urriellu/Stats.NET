@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.1;netcoreapp3.1;net5.0;net6.0</TargetFrameworks>
+    <AssemblyName>StatsNET</AssemblyName>
+    <RootNamespace>StatsNET</RootNamespace>
+    <PackageId>Stats.NET</PackageId>
+    <Title>Stats.NET</Title>
+    <Authors>Urriellu</Authors>
+    <PackageProjectUrl>https://github.com/Urriellu/Stats.NET</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Urriellu/Stats.NET</RepositoryUrl>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+    <DocumentationFile>bin\Release\Stats.NET.xml</DocumentationFile>
+  </PropertyGroup>
+
+</Project>
